@@ -28,7 +28,7 @@
 
 [Thunder client](https://www.thunderclient.com/) Visual Studio Code extension.
 
-[thunder-collection_Tasks.json](https://github.com/kkamara/laravel-10-api/blob/main/database/thunder-collection_Tasks.json.)
+[thunder-collection_Tasks.json](https://github.com/kkamara/laravel-10-api/blob/main/database/thunder-collection_Tasks.json)
 
 ## Tinker
 
