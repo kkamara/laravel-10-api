@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2023-09-19T12:23:29.693Z",
+    "dateExported": "2023-09-19T12:29:05.657Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -53,6 +53,30 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"name\": \"Task one\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "96cc2726-2695-456e-810d-03372068bfde",
+            "colId": "b7d021e0-a3ee-4f7f-9622-c52d1d806e06",
+            "containerId": "",
+            "name": "Updating a Task",
+            "url": "http://localhost:3000/api/v1/tasks/11",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-09-19T12:26:59.226Z",
+            "modified": "2023-09-19T12:28:31.508Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Task one updated\"\n}",
                 "form": []
             },
             "tests": []
