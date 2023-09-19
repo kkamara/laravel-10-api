@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2023-09-19T12:04:53.826Z",
+    "dateExported": "2023-09-19T12:23:29.693Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -31,6 +31,30 @@
             "modified": "2023-09-19T12:04:46.286Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e1a86257-d327-4b29-9b99-7450ce6bdcce",
+            "colId": "b7d021e0-a3ee-4f7f-9622-c52d1d806e06",
+            "containerId": "",
+            "name": "Storing a Task",
+            "url": "http://localhost:3000/api/v1/tasks",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-09-19T12:15:39.843Z",
+            "modified": "2023-09-19T12:21:59.298Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Task one\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
