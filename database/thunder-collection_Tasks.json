@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2023-09-19T12:29:05.657Z",
+    "dateExported": "2023-09-19T12:37:06.474Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -77,6 +77,30 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"name\": \"Task one updated\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "320b378a-4ece-4a1d-a0d4-73203c2d9778",
+            "colId": "b7d021e0-a3ee-4f7f-9622-c52d1d806e06",
+            "containerId": "",
+            "name": "Mark a task as complete",
+            "url": "http://localhost:3000/api/v1/tasks/11/complete",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-09-19T12:35:19.258Z",
+            "modified": "2023-09-19T12:36:45.034Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"is_completed\": false\n}",
                 "form": []
             },
             "tests": []
