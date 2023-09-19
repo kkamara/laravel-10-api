@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API\V1;
 use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TaskResource;
 use App\Models\Task;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,9 @@ class TaskController extends Controller
      */
     public function index()
     {
-        return Task::all();
+        return TaskResource::collection(
+            Task::all()
+        );
     }
 
     /**
@@ -39,7 +42,7 @@ class TaskController extends Controller
      */
     public function show(Task $task)
     {
-        //
+        return TaskResource::make($task);
     }
 
     /**
