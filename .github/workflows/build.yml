@@ -53,7 +53,9 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
       - name: Install Composer dependencies
-        run: composer install -q --no-progress --prefer-dist --optimize-autoloader
+        run: |
+            rm composer.lock
+            composer install -q --no-progress --prefer-dist --optimize-autoloader
       - name: Prepare Environment
         run: |
             sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" .env.testing
