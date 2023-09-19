@@ -6,6 +6,8 @@
 
 (19-Sep-2023) Laravel 10 GDPR compliant API system. I have been working with Laravel since Laravel 5.4 - www.endoflife.date/laravel
 
+* [Using Thunder Client?](#https://github.com/kkamara/laravel-10-api#using-thunder-client)
+
 * [Tinker](#tinker)
 
 * [Installation](#installation)
