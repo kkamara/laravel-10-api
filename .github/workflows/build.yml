@@ -5,7 +5,7 @@ env:
 jobs:
   laravel:
     name: pipeline (PHP ${{ matrix.php-versions }})
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     services:
       mysql:
         image: mysql:5.7
