@@ -5,7 +5,7 @@ env:
 jobs:
   laravel:
     name: pipeline (PHP ${{ matrix.php-versions }})
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     services:
       mysql:
         image: mysql:5.7
@@ -53,9 +53,7 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
       - name: Install Composer dependencies
-        run: |
-            rm composer.lock
-            composer install -q --no-progress --prefer-dist --optimize-autoloader
+        run: composer install -q --no-progress --prefer-dist --optimize-autoloader
       - name: Prepare Environment
         run: |
             sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" .env.testing
