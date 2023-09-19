@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Tasks",
-    "dateExported": "2023-09-19T12:37:06.474Z",
+    "dateExported": "2023-09-19T12:47:13.538Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -103,6 +103,25 @@
                 "raw": "{\n  \"is_completed\": false\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "d47a3a03-14a5-4c47-b1e5-40f135ebf32f",
+            "colId": "b7d021e0-a3ee-4f7f-9622-c52d1d806e06",
+            "containerId": "",
+            "name": "Delete a Task",
+            "url": "http://localhost:3000/api/v1/tasks/11",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-09-19T12:44:47.746Z",
+            "modified": "2023-09-19T12:46:58.424Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
             "tests": []
         }
     ]
