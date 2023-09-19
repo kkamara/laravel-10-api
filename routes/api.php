@@ -23,7 +23,10 @@ Route::prefix("v1")->group(function() {
     );
     Route::patch(
         "/tasks/{task}/complete", 
-        CompleteTaskController::class
+        [
+            CompleteTaskController::class,
+            "update"
+        ]
     );
 });  
 
