@@ -17,7 +17,7 @@ use App\Http\Controllers\API\V1\TaskController;
 
 Route::prefix("v1")->group(function() {
     Route::apiResource(
-        "/v1/tasks", 
+        "/tasks", 
         TaskController::class
     );
 });  
