@@ -82,7 +82,7 @@ php artisan serve --port 3000
 ## Api Documentation
 
 ```bash
-php artisan route:list -vvv
+php artisan route:list --path=api -vvv
 # example output:
 ...
 POST       api/user ............................ login › Api\UserController@login
